@@ -37,27 +37,57 @@ La comunicación se realiza mediante **WebClient + Eureka (LoadBalanced)**, sin 
 
 ## 📚 Endpoints principales
 
-### IA
+### 🤖 Inteligencia Artificial
 
-- **Generación simple**  
-  `GET http://localhost:8090/api/ai/generate?promptMessage=mensaje
+#### Generación simple (prompt directo)
+GET http://localhost:8090/api/ai/generate?promptMessage=mensaje
 
-- **Chat IA con microservicios**  
-  `POST http://localhost:8090/api/ai/chat
-  
+shell
+Copy code
 
-### Estudiantes
+#### Chat IA integrado con microservicios
+POST http://localhost:8090/api/ai/chat
 
-- **Total de estudiantes**  
-  `GET http://localhost:8090/api/ai/students/count
+css
+Copy code
 
-- **Por semestre**  
-  `GET http://localhost:8090/api/ai/students/count/semester?year=2025&semester=1
+**Body (JSON):**
+```json
+{
+  "message": "mensaje a consultar"
+}
+🎓 Estudiantes
+Total de estudiantes
+bash
+Copy code
+GET http://localhost:8090/api/ai/students/count
+Estudiantes por semestre
+ruby
+Copy code
+GET http://localhost:8090/api/ai/students/count/semester?year=2025&semester=1
+Consulta de estudiante por DNI (vía chat IA)
+bash
+Copy code
+POST http://localhost:8090/api/ai/chat
+Body (JSON):
 
-### Docentes
+json
+Copy code
+{
+  "message": "puedes buscar información del estudiante con DNI 97654321"
+}
+👨‍🏫 Docentes
+Consulta de docente por DNI (vía chat IA)
+bash
+Copy code
+POST http://localhost:8090/api/ai/chat
+Body (JSON):
 
-- **Docente por DNI**  
-  `GET /api/ai/teacher/dni/{dni}`
+json
+Copy code
+{
+  "message": "puedes buscar información del profesor con DNI 23456789"
+}
 
 ---
 
