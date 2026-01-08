@@ -60,6 +60,17 @@ Documentación individual por microservicio:
 
 ---
 
+## 📊 Grafana, Prometheus, Ollama y Redis
+
+Este proyecto utiliza **Docker** y **Docker Compose** para facilitar la ejecución del entorno.
+
+### 🚀 Levantar los servicios
+Ejecuta el siguiente comando para iniciar los contenedores en segundo plano:
+
+```bash
+docker compose up -d
+```
+
 ## 📄 Licencia
 
 **Privado.**  
