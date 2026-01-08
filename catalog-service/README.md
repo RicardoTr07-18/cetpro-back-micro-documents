@@ -69,10 +69,10 @@ Generación de reportes académicos en múltiples formatos.
 ## 📚 Documentación API
 
 - **Swagger UI**  
-  http://localhost:PUERTO/swagger-ui.html
+  http://localhost:8082/swagger-ui.html
 
 - **OpenAPI JSON**  
-  http://localhost:PUERTO/v3/api-docs
+  http://localhost:8082/v3/api-docs
 
 ---
 
