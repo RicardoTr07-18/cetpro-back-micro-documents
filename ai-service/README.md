@@ -40,31 +40,28 @@ La comunicación se realiza mediante **WebClient + Eureka (LoadBalanced)**, sin 
 ## 🤖 Inteligencia Artificial
 
 ### Generación simple (prompt directo)
-```http
-GET http://localhost:8090/api/ai/generate?promptMessage=mensaje
-Chat IA integrado con microservicios
 http
-Copy code
+GET http://localhost:8090/api/ai/generate?promptMessage=mensaje
+
+### Chat IA integrado con microservicios
+http
 POST http://localhost:8090/api/ai/chat
-Body (JSON):
+### Body (JSON):
 
 json
-Copy code
 {
   "message": "mensaje a consultar"
 }
-🎓 Estudiantes
-Total de estudiantes
+
+### 🎓 Estudiantes
+### Total de estudiantes
 http
-Copy code
 GET http://localhost:8090/api/ai/students/count
-Estudiantes por semestre
+### Estudiantes por semestre
 http
-Copy code
 GET http://localhost:8090/api/ai/students/count/semester?year=2025&semester=1
-Consulta de estudiante por DNI (vía Chat IA)
+### Consulta de estudiante por DNI (vía Chat IA)
 http
-Copy code
 POST http://localhost:8090/api/ai/chat
 Body (JSON):
 
@@ -73,15 +70,13 @@ Copy code
 {
   "message": "puedes buscar información del estudiante con DNI 97654321"
 }
-👨‍🏫 Docentes
-Consulta de docente por DNI (vía Chat IA)
+### 👨‍🏫 Docentes
+### Consulta de docente por DNI (vía Chat IA)
 http
-Copy code
 POST http://localhost:8090/api/ai/chat
 Body (JSON):
 
 json
-Copy code
 {
   "message": "puedes buscar información del profesor con DNI 23456789"
 }
