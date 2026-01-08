@@ -49,10 +49,10 @@ El **API Gateway** actúa como el punto de entrada único a la plataforma de mic
 ## 📚 Documentación API
 
 - **Swagger UI**  
-  http://localhost:8090/swagger-ui.html
+  http://localhost:8081/swagger-ui.html
 
 - **OpenAPI JSON**  
-  http://localhost:8090/v3/api-docs
+  http://localhost:8081/v3/api-docs
 
 > **Nota:** El API Gateway documenta únicamente su configuración y filtros.  
 > Los endpoints de negocio se documentan en cada microservicio correspondiente.
