@@ -57,7 +57,7 @@ POST http://localhost:8090/api/ai/chat
 
 ---
 
-## 🎓 Estudiantes
+### 🎓 Estudiantes
 
 #### Total de estudiantes
 ```http
@@ -82,7 +82,7 @@ POST http://localhost:8090/api/ai/chat
 
 ---
 
-## 👨‍🏫 Docentes
+### 👨‍🏫 Docentes
 
 #### Consulta de docente por DNI (vía Chat IA)
 ```http
