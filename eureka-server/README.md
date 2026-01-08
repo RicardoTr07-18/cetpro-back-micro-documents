@@ -30,7 +30,42 @@ Es un componente **core de infraestructura** y no expone lógica de negocio.
 
 ---
 
-## ⚙️ Configuración clave
+## 🌐 Consola Eureka
 
-### 🌐 Consola Eureka
-  http://localhost:8761
+### Dashboard
+http://localhost:8761
+
+Desde la consola se puede:
+
+- Ver servicios registrados
+- Ver instancias activas e inactivas
+- Ver metadata de cada servicio
+
+---
+
+## 📊 Observabilidad
+
+- **Health Check:**  
+  `/actuator/health`
+
+- **Prometheus:**  
+  `/actuator/prometheus`
+
+- **Info:**  
+  `/actuator/info`
+
+---
+
+## 🚀 Rol en la arquitectura
+
+- Habilita **Service Discovery**
+- Elimina dependencias de red estáticas
+- Permite escalado horizontal de microservicios
+- Facilita resiliencia y balanceo de carga
+
+### Componente obligatorio para
+
+- API Gateway
+- Catalog Service
+- Finance Service
+- AI Service
