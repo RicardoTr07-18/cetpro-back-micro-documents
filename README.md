@@ -71,6 +71,10 @@ Ejecuta el siguiente comando para iniciar los contenedores en segundo plano:
 docker compose up -d
 ```
 
+![alt text](image.png)
+
+
+
 ## 📄 Licencia
 
 **Privado.**  
