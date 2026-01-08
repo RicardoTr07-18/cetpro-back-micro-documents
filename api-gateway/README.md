@@ -1,7 +1,7 @@
 API Gateway
 📌 Descripción
 
-El API Gateway actúa como el punto de entrada único a la plataforma de microservicios. Es responsable del enrutamiento de solicitudes, la seguridad centralizada, la validación de tokens JWT, y el control de acceso basado en roles, garantizando una comunicación segura y controlada entre clientes y servicios internos.
+El API Gateway actúa como el punto de entrada único a la plataforma de microservicios. Es responsable del enrutamiento de solicitudes, la seguridad centralizada, la validación de tokens JWT y el control de acceso basado en roles, garantizando una comunicación segura y controlada entre clientes y servicios internos.
 
 🧩 Responsabilidades
 
@@ -13,7 +13,7 @@ Autorización por roles (cliente, administrador)
 
 Gestión centralizada de CORS
 
-Propagación de contexto de seguridad hacia los servicios backend
+Propagación del contexto de seguridad hacia los servicios backend
 
 Exposición de métricas y endpoints de monitoreo
 
@@ -40,9 +40,11 @@ Prometheus
 Autenticación basada en Bearer Token (JWT)
 
 Rutas públicas:
+
 /auth/**
 
-Rutas protegidas por rol
+
+Rutas protegidas mediante control de roles
 
 Headers inyectados a los microservicios:
 
@@ -55,28 +57,40 @@ Authorization
 📚 Documentación API
 
 Swagger UI
+
 http://localhost:8090/swagger-ui.html
 
+
 OpenAPI JSON
+
 http://localhost:8090/v3/api-docs
 
-Nota: El API Gateway documenta únicamente su configuración y filtros.
-Los endpoints de negocio se documentan en cada microservicio.
+
+Nota: El API Gateway documenta únicamente su configuración, filtros y seguridad.
+Los endpoints de negocio se documentan en cada microservicio correspondiente.
 
 📊 Observabilidad
 
-Health Check: /actuator/health
+Health Check:
 
-Métricas: /actuator/metrics
+/actuator/health
 
-Prometheus: /actuator/prometheus
+
+Métricas:
+
+/actuator/metrics
+
+
+Prometheus:
+
+/actuator/prometheus
 
 🚀 Rol en la arquitectura
 
-Reduce acoplamiento entre clientes y microservicios
+Reduce el acoplamiento entre clientes y microservicios
 
-Centraliza políticas de seguridad
+Centraliza políticas de seguridad y control de acceso
 
-Simplifica la evolución del sistema
+Simplifica la evolución y escalabilidad del sistema
 
-Mejora la trazabilidad y el monitoreo
+Mejora la trazabilidad, monitoreo y mantenimiento
