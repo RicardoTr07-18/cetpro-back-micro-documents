@@ -33,32 +33,47 @@ La comunicación se realiza mediante **Feign Client + Circuit Breaker**, con fal
 
 ### Finanzas
 
-- **Deudas por DNI**  
-  `GET /api/finance/debt/dni/{dni}`
+- **Deudas por DNI**
+```http  
+GET /api/finance/debt/dni/{dni}`
+```
 
-- **Deudas por período**  
-  `GET /api/finance/debt/period/{periodCode}`
+- **Deudas por período**
+```http  
+GET /api/finance/debt/period/{periodCode}`
+```
 
-- **Pagos por deuda**  
-  `GET /api/finance/payment/debt/{idDebt}`
+- **Pagos por deuda**
+```http  
+GET /api/finance/payment/debt/{idDebt}`
+```
 
 - **Crear deuda desde matrícula**  
-  `POST /api/finance/debt/matricula/{idMatricula}?amount=`
+```http
+POST /api/finance/debt/matricula/{idMatricula}?amount=`
+```
 
 - **Registrar pago por ID**  
-  `POST /api/finance/payment/{idDebt}?amount=`
+```http
+POST /api/finance/payment/{idDebt}?amount=`
+```
 
 - **Registrar pago por código**  
-  `POST /api/finance/payment/code/{code}?amount=`
+```http
+POST /api/finance/payment/code/{code}?amount=`
+```
 
 ### Matrículas (Proxy financiero)
 
 - **Historial por DNI**  
-  `GET /api/finance/matricula/historial/{dni}`
+```http
+GET /api/finance/matricula/historial/{dni}`
+```
 
 - **Por período**  
-  `GET /api/finance/matricula/periodo/{period}`
-
+```http
+GET /api/finance/matricula/periodo/{period}`
+```
 ---
 
 ## ⚡ Caché y rendimiento
