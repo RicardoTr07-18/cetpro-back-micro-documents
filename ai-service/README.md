@@ -40,18 +40,19 @@ La comunicación se realiza mediante **WebClient + Eureka (LoadBalanced)**, sin 
 ### IA
 
 - **Generación simple**  
-  `GET /api/ai/generate?promptMessage=`
+  `GET http://localhost:8090/api/ai/generate?promptMessage=mensaje
 
 - **Chat IA con microservicios**  
-  `POST /api/ai/chat`
+  `POST http://localhost:8090/api/ai/chat
+  
 
 ### Estudiantes
 
 - **Total de estudiantes**  
-  `GET /api/ai/students/count`
+  `GET http://localhost:8090/api/ai/students/count
 
 - **Por semestre**  
-  `GET /api/ai/students/count/semester?year=&semester=`
+  `GET http://localhost:8090/api/ai/students/count/semester?year=2025&semester=1
 
 ### Docentes
 
