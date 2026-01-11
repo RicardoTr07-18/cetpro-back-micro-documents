@@ -8,6 +8,18 @@ Opera de forma **reactiva**, **cacheada** y con descubrimiento dinámico de serv
 
 ---
 
+Instala antes ollama:
+
+descargar ollama:
+```http
+docker exec -it ollama ollama pull llama3
+```
+
+verificar:
+```http
+docker exec -it ollama ollama list
+```
+
 ## 🧩 Responsabilidades
 
 - Generación de respuestas con IA local (**Ollama – LLaMA3**)
