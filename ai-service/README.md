@@ -20,6 +20,13 @@ verificar:
 docker exec -it ollama ollama list
 ```
 
+Recien puedes levantar el contenedor de ollama:
+```http
+docker compose up -d
+```
+
+---
+
 ## 🧩 Responsabilidades
 
 - Generación de respuestas con IA local (**Ollama – LLaMA3**)
